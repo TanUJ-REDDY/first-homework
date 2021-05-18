@@ -1,49 +1,35 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <title>first homework</title>
+	<title>The math test</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="main.js"></script>
 </head>
-
 <body>
-
-<h1>open console</h1>
-<p>is you click on ctrl,shift,j you will open the hidden log</p>
-<script>console.log(" hi I am console screen ");
-    var firstname="tanuj";
-    var lastname="kambam";
-    console.log(firstname);
-    console.log(lastname);
-    var fullname=firstname.concat(lastname)
-    console.log(fullname)
-    var length_of_full_name = fullname.length; 
-    console.log(length_of_full_name); 
-    var name_one = "I am tanuj reddy"; 
-    console.log(name_one);
-    var replace_name = name_one.replace("reddy","kambam"); 
-    console.log(replace_name);
-    var capital_name = "DONE";
-    var making_lower_case = capital_name.toLowerCase();
-    console.log(making_lower_case);
-    var small_name = "mam"; 
-    var making_lower_case = small_name.toUpperCase(); 
-    console.log(making_lower_case);
-    var square_root = Math.sqrt(16);
-    console.log(square_root);
-    var maximum_number = Math.max(20, 10, 30); console.log(maximum_number);
-    var minimum_number = Math.min(20, 10, 1, 0, 25);
-    console.log(minimum_number); 
-    var power_eg_1 = Math.pow(8, 2); 
-    console.log(power_eg_1);
-    var power_eg_2 = Math.pow(4, 4); 
-    console.log(power_eg_2);
-    </script>
-
-
-
+<center> 
+	<h1> game </h1>
+	<div class="col-lg-4 col-xs-11 col-sm-8 login_div1"	> 
+		<h3> player1 login for the game </h3>
+		<label > user name:</label>
+		<input type="text" id="player1_name_input" class="form-control" placeholder="player1name ">
+		<br> 
+	</div>
+	<br>
+	<div class="col-lg-4 col-xs-11 col-sm-8 login_div2"	> 
+		<h3> player2 login for the game </h3>
+		<label > user name:</label>
+		<input type="text" id="player2_name_input" class="form-control" placeholder="player2name ">
+		<br> 
+	</div>
+	<br>
+	<button style="width: 30%;" class="btn btn-primary" onclick="addUser()">login</button>
+</center>
 </body>
-
-
-
 </html>
